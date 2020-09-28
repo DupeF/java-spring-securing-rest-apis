@@ -21,7 +21,7 @@ public class UserAuthority {
 	private String authority;
 	
 	@ManyToOne
-	@JoinColumn(name = "user_id")
+	@JoinColumn(name = "username", referencedColumnName = "username")
 	private User user;
 
 	public UserAuthority() {
